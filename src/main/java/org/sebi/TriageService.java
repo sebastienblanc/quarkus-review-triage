@@ -7,12 +7,11 @@ import org.eclipse.microprofile.reactive.messaging.Incoming;
 import io.smallrye.reactive.messaging.kafka.Record;
 import io.quarkus.logging.Log;
 import io.smallrye.common.annotation.Blocking;
-import io.smallrye.mutiny.Uni;
 import jakarta.enterprise.context.ApplicationScoped;
 import jakarta.inject.Inject;
 
 @ApplicationScoped
-public class MyReactiveMessagingApplication {
+public class TriageService {
 
     @Inject
     AiService aiService;
