@@ -1,4 +1,6 @@
-# quarkus-kafka-ai
+# quarkus-review-triage
+
+Largely inspired from the sample from the Quarkus Langchain4j extension, this application will consume a kakfa topic containing reviews. The LLM will decide if it's a positive or negative review and publish it on the correct topic. 
 
 ## Ollama and model
 
