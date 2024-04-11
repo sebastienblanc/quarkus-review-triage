@@ -9,6 +9,8 @@ channels:
   incoming-review:
     description: The topic on which created reviews events may be consumed
     subscribe:
+      x-microcks-operation:
+        frequency: 10
       summary: Receive informations about a customer review
       operationId: receivedReviewEvents
       message:
@@ -26,10 +28,16 @@ components:
             description: The review
             type: string
       examples:
-        - Postive review:
+        - Postive review 1:
             payload:
               review: I love your product
-        - Negative review:
+        - Negative review 1:
+            payload:
+              review: Because of your product my business is going down
+        - Postive review 2:
+            payload:
+              review: Your service saved my life
+        - Negative review 2:
             payload:
               review: I hate your product
   schemas:
